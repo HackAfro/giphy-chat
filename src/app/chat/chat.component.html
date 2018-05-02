@@ -1,0 +1,24 @@
+<div class="main">
+  <div class="chat-box">
+    <div class="message-area">
+      <div class="message" *ngFor="let message of messages" [ngClass]="getClasses(message.type)">
+        <p [hidden]="message.messageType !== 'text'">{{message.text}}</p>
+        <img [src]="message?.gif?.gif_url" alt="gifs" [hidden]="message.messageType !== 'gif'">
+      </div>
+    </div>
+    <div class="input-area">
+      <form (submit)="sendMessage()" name="messageForm" #messageForm="ngForm">
+        <div [hidden]="!sending">
+          <div class="spinner">
+            <app-looping-rhombuses-spinner [rhombusSize]="10" [color]="grey"></app-looping-rhombuses-spinner>
+          </div>
+        </div>
+
+        <input type="text" name="message" id="message" [(ngModel)]="message">
+        <button>
+          <span data-feather="send"></span>
+        </button>
+      </form>
+    </div>
+  </div>
+</div>

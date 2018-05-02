@@ -1,6 +1,6 @@
 import { AppPage } from './app.po';
 
-describe('giphy-chat App', () => {
+describe('angular-chat App', () => {
   let page: AppPage;
 
   beforeEach(() => {
