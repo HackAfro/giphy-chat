@@ -119,7 +119,7 @@
   dependencies:
     tslib "^1.7.1"
 
-"@angular/core@^5.2.0":
+"@angular/core@^5.0.0", "@angular/core@^5.2.0":
   version "5.2.10"
   resolved "https://registry.yarnpkg.com/@angular/core/-/core-5.2.10.tgz#a6eba06cae7267efbd2666e3fa5e42b84c2261de"
   dependencies:
@@ -334,8 +334,10 @@ amqplib@^0.5.2:
     safe-buffer "^5.0.1"
 
 angular-epic-spinners@^1.0.4:
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/angular-epic-spinners/-/angular-epic-spinners-1.0.4.tgz#71a3a351df884168b788710d29f77d497d284d9c"
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/angular-epic-spinners/-/angular-epic-spinners-1.0.6.tgz#ff482e283fe2c127f0922649df8e5832e6afce1e"
+  dependencies:
+    "@angular/core" "^5.0.0"
 
 ansi-html@0.0.7:
   version "0.0.7"
