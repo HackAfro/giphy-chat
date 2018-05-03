@@ -1,24 +1,23 @@
-# Angular-Pusher-Chat
-
-Emoji suggestions in an Angular chat application using sentiment analysis 
+## Giphy Chat
+Get a gif when the `giphy` command is sent as a suffix for ensuing message
 
 ## Getting Started
 
-1. Install the angular [https://cli.angular.io](CLI) by running `npm install -g @angular/cli`
-2. Clone the repo
-3. Install project dependencies by running `npm install`
-4. Start dev server `npm start`
+- Clone the repository
+- cd into `giphy-chat` 
+- Create a file called `env` and update it like so
+```
+PUSHER_APP_ID=APP_ID
+PUSHER_KEY=PUSHER_KEY
+PUSHER_SECRET=PUSHER_SECRET
+GIPHY_KEY=KEY
 
+```
+- Visit [https://developers.giphy.com/dashboard/](Giphy's) developer's portal and get a `client_key`.
+- Visit [https://dashboard.pusher.com/](Pusher's) dashboard and create a channels app. Copy your `app_id`, `pusher_key` and `pusher_secret`.
+- Replace the placeholder values above with your respective keys
+- Run `npm install && npm start`
 
-## How To
+## How to use
 
-- Get your pusher keys from your profile.
-- Create a file named .env and place your appId, keys and secret there.
-- Include your pusher key in the environment.ts file
-
-## Built With
-
-* [Pusher](https://pusher.com/) - APIs to enable devs building realtime features
-* [Express](https://expressjs.com) - Fast, unopinionated, minimalist web framework for Node.js
-* [Angular](https://angular.io)
-* [Sentiment](https://github.com/thisandagain/sentiment) - Javascript library for performing sentiment analysis
+To send a gif, start your message with the word `giphy`.
