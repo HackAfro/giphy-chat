@@ -3,14 +3,14 @@
     <div class="message-area">
       <div class="message" *ngFor="let message of messages" [ngClass]="getClasses(message.type)">
         <p [hidden]="message.messageType !== 'text'">{{message.text}}</p>
-        <img [src]="message?.gif?.gif_url" alt="gifs" [hidden]="message.messageType !== 'gif'">
+        <img [src]="message?.gif?.gif_url" alt="" [hidden]="message.messageType !== 'gif'">
       </div>
     </div>
     <div class="input-area">
       <form (submit)="sendMessage()" name="messageForm" #messageForm="ngForm">
         <div [hidden]="!sending">
           <div class="spinner">
-            <app-looping-rhombuses-spinner [rhombusSize]="10" [color]="'darkslategray'"></app-looping-rhombuses-spinner>
+<!--            <app-looping-rhombuses-spinner [rhombusSize]="10" [color]="'darkslategray'"></app-looping-rhombuses-spinner>-->
           </div>
         </div>
 
